@@ -137,11 +137,11 @@ JVM 支持两种类型的类加载器 。分别为<mark>引导类加载器（Boo
 - Java 语言编写，由 sun.misc.Launcher$ExtClassLoader 实现。
 - 派生于 ClassLoader 类
 - 父类加载器为启动类加载器
-- 从 java.ext.dirs 系统属性所指定的目录中加载类库，或从 JDK 的安装目录的 jre/1ib/ext 子目录（扩展目录）下加载类库。如果用户创建的 JAR 放在此目录下，也会自动由扩展类加载器加载。
+- 从 java.ext.dirs 系统属性所指定的目录中加载类库，或从 JDK 的安装目录的 jre/lib/ext 子目录（扩展目录）下加载类库。如果用户创建的 JAR 放在此目录下，也会自动由扩展类加载器加载。
 
 **应用程序类加载器（系统类加载器，AppClassLoader）**
 
-- java 语言编写，由 sun.misc.LaunchersAppClassLoader 实现
+- java 语言编写，由 sun.misc.Launchers#AppClassLoader 实现
 - 派生于 ClassLoader 类
 - 父类加载器为扩展类加载器
 - 它负责加载环境变量 classpath 或系统属性 java.class.path 指定路径下的类库
