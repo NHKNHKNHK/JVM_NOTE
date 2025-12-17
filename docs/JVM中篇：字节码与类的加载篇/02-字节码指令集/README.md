@@ -173,68 +173,7 @@ public void load(int num, Object obj, long count, boolean flag, short[] arr) {
 ![437a717e-98e2-4847-b52e-e6632d0745a4](https://img-blog.csdnimg.cn/img_convert/fafa61a6702b5fc88179c404ba736029.png)
 ![ffd7246e-2e46-41e0-9fd6-1e65ace5dbd1](https://img-blog.csdnimg.cn/img_convert/c0a6284e1deaf76669089e669916f440.png)
 
-<table>
-    <tbody>  
-        <tr>
-            <th>类型</th> 
-            <th>常数指令</th> 
-            <th>范围</th> 
-       </tr>
-       <tr>
-            <td rowspan="4">int(boolean,byte,char,short)</td>
-            <td>iconst</td>
-            <td>[-1, 5]</td>
-       </tr>	
-       <tr>
-            <td>bipush</td>
-            <td>[-128, 127]</td>
-       </tr>
-       <tr>
-            <td>sipush</td>
-            <td>[-32768, 32767]</td>
-       </tr> 
-       <tr>
-            <td>ldc</td>
-            <td>any int value</td>
-       </tr>
-       <tr>
-            <td rowspan="2">long</td>
-            <td>lconst</td>
-            <td>0, 1</td>
-       </tr>	
-       <tr>
-            <td>ldc</td>
-            <td>any long value</td>
-       </tr>
-       <tr>
-            <td rowspan="2">float</td>
-            <td>fconst</td>
-            <td>0, 1, 2</td>
-       </tr>	
-       <tr>
-            <td>ldc</td>
-            <td>any float value</td>
-       </tr>
-       <tr>
-            <td rowspan="2">double</td>
-            <td>dconst</td>
-            <td>0, 1</td>
-       </tr>	
-       <tr>
-            <td>ldc</td>
-            <td>any double value</td>
-       </tr> 
-       <tr>
-            <td rowspan="2">reference</td>
-            <td>aconst</td>
-            <td>null</td>
-       </tr>
-       <tr>
-            <td>ldc</td>
-            <td>String literal, Class literal</td>
-       </tr>
-   <tbody> 
-</table>
+
 
 
 ![566b9397-5afe-4a3f-9e17-9ebf504dfc80](https://img-blog.csdnimg.cn/img_convert/59982d71dc70f7d7b873f50130281c21.png)
@@ -418,6 +357,7 @@ public void load(int num, Object obj, long count, boolean flag, short[] arr) {
 
 ## 算术指令集
 
+```vue
 <table>
     <tbody>  
         <tr>
@@ -514,7 +454,7 @@ public void load(int num, Object obj, long count, boolean flag, short[] arr) {
        </tr> 
    <tbody> 
 </table>
-
+```
 
 ![](https://img-blog.csdnimg.cn/img_convert/39ac5dc0cb406c2d75b50b10226322b0.png)
 

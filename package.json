@@ -1,0 +1,38 @@
+{
+  "name": "jvm-note",
+  "version": "1.0.0",
+  "description": "经典老哥的JVM笔记",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
+  },
+  "keywords": [],
+  "author": "经典老哥",
+  "license": "ISC",
+  "packageManager": "pnpm@10.7.1",
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "markdown-it-mathjax3": "^4.3.2",
+    "nprogress-v2": "^1.1.10",
+    "sass-embedded": "^1.89.2",
+    "unocss": "^66.3.3",
+    "unplugin-auto-import": "^20.0.0",
+    "unplugin-vue-components": "^29.0.0",
+    "vitepress": "^1.6.3",
+    "vitepress-plugin-group-icons": "^1.6.1",
+    "vitepress-plugin-permalink": "^1.2.1"
+  },
+  "dependencies": {
+    "@dhlx/vitepress-plugin-drawio": "^0.0.10",
+    "@giscus/vue": "^3.1.1",
+    "@vueuse/core": "^13.6.0",
+    "canvas-confetti": "^1.9.3",
+    "medium-zoom": "^1.1.0",
+    "vitepress-plugin-legend": "^1.1.0",
+    "vue": "^3.5.18"
+  }
+}

@@ -6,12 +6,32 @@
 >
 > https://github.com/uxiahnan/NOTE_JVM
 
-[toc]
+[TOC]
 
 # 1. Class 文件结构
 
 ## 1.1. Class 字节码文件结构
 
+| 项目       | 类型           | 名称                | 说明                      | 长度     | 数量                    |
+| ---------- | -------------- | ------------------- | ------------------------- | -------- | ----------------------- |
+| 魔数       | u4             | magic               | 魔数，识别 Class 文件格式 | 4 个字节 | 1                       |
+| 版本号     | u2             | minor_version       | 副版本号 (小版本)         | 2 个字节 | 1                       |
+|            | u2             | major_version       | 主版本号 (大版本)         | 2 个字节 | 1                       |
+| 常量池集合 | u2             | constant_pool_count | 常量池计数器              | 2 个字节 | 1                       |
+|            | cp_info        | constant_pool       | 常量池表                  | n 个字节 | constant_pool_count - 1 |
+| 访问标识   | u2             | access_flags        | 访问标识                  | 2 个字节 | 1                       |
+| 索引集合   | u2             | this_class          | 类索引                    | 2 个字节 | 1                       |
+|            | u2             | super_class         | 父类索引                  | 2 个字节 | 1                       |
+|            | u2             | interfaces_count    | 接口计数器                | 2 个字节 | 1                       |
+|            | u2             | interfaces          | 接口索引集合              | 2 个字节 | interfaces_count        |
+| 字段表集合 | u2             | fields_count        | 字段计数器                | 2 个字节 | 1                       |
+|            | field_info     | fields              | 字段表                    | n 个字节 | fields_count            |
+| 方法表集合 | u2             | methods_count       | 方法计数器                | 2 个字节 | 1                       |
+|            | method_info    | methods             | 方法表                    | n 个字节 | methods_count           |
+| 属性表集合 | u2             | attributes_count    | 属性计数器                | 2 个字节 | 1                       |
+|            | attribute_info | attributes          | 属性表                    | n 个字节 | attributes_count        |
+
+```vue
 <table>
     <tbody>  
         <tr>
@@ -144,6 +164,7 @@
         </tr>	
    <tbody> 
 </table>
+```
 
 ## 1.2. Class 文件数据类型
 
